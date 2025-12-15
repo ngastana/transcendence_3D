@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b0f19" />
+    <meta name="description" content="FT_TRANSCENDENCE • PONG Game SPA" />
+    <meta name="robots" content="noindex,nofollow" />
+
+    <title>PONG • FT_TRANSCENDENCE</title>
+    <!-- Favicons (opcional: coloca tus iconos en /public) -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <!-- Tailwind se inyecta vía src/styles.css -->
+  </head>
+  <body class="min-h-screen bg-slate-900 text-slate-100 antialiased">
+    <!-- Contenedor de la SPA -->
+    <div id="app" class="min-h-screen flex flex-col">
+      <!-- Splash mínimo mientras carga JS -->
+      <div class="flex-1 grid place-items-center p-6">
+        <div class="animate-pulse text-center">
+          <div class="text-2xl font-bold mb-2">Cargando PONG…</div>
+          <div class="h-1 w-40 bg-white/20 rounded overflow-hidden">
+            <div class="h-full w-1/3 bg-white/60 animate-[pulse_1.2s_ease-in-out_infinite]"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <noscript>
+      Habilita JavaScript para usar esta aplicación.
+    </noscript>
+    <!-- Punto de entrada Vite -->
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
